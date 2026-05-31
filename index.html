@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chandresh Sharma | UI/UX Developer</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#2563eb">
+    <meta name="description"
+        content="Portfolio of Chandresh Sharma, UI/UX Developer specializing in responsive web design and hybrid mobile apps.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Background Blobs -->
+    <div class="bg-blobs" aria-hidden="true">
+        <div class="blob blob-1 parallax-bg" data-speed="0.02"></div>
+        <div class="blob blob-2 parallax-bg" data-speed="0.03"></div>
+        <div class="blob blob-3 parallax-bg" data-speed="0.015"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar" aria-hidden="true"></div>
+
+    <!-- HEADER -->
+    <header class="glass-header" id="header">
+        <nav class="centered-nav">
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link"><span>Home</span></a></li>
+                <!-- <li><a href="#summary" class="nav-link">About</a></li> -->
+                <li><a href="#skills" class="nav-link"><span>Skills</span></a></li>
+                <li><a href="#projects" class="nav-link"><span>Projects</span></a></li>
+                <li><a href="#journey" class="nav-link"><span>Journey</span></a></li>
+                <li><a href="#contact" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+            <!-- <button class="theme-toggle magnetic" id="themeToggle" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button> -->
+            <div class="hamburger magnetic" id="hamburger"><span class="bar"></span><span class="bar"></span><span
+                    class="bar"></span></div>
+        </nav>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu-overlay" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#hero" class="mobile-nav-link"><span>Home</span></a></li>
+            <!-- <li><a href="#summary" class="mobile-nav-link">About</a></li> -->
+            <li><a href="#skills" class="mobile-nav-link"><span>Skills</span></a></li>
+            <li><a href="#projects" class="mobile-nav-link"><span>Projects</span></a></li>
+            <li><a href="#journey" class="mobile-nav-link"><span>Journey</span></a></li>
+            <li><a href="#contact" class="mobile-nav-link"><span>Contact</span></a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- HERO CANVAS -->
+        <section class="scroll-canvas-section" id="hero">
+            <div class="sticky-container">
+                <canvas id="hero-canvas"></canvas>
+                <div class="overlay-text" id="text-1">
+                    <h1 class="parallax-text" data-speed="0.1">Chandresh Sharma</h1>
+                    <p class="parallax-text subtitle-glow" data-speed="0.3">UI/UX Developer</p>
+                    <div class="scroll-indicator">
+                        <div class="scroll-mouse">
+                            <div class="scroll-wheel"></div>
+                        </div><span>Scroll to explore</span>
+                    </div>
+                </div>
+                <div class="overlay-text" id="text-2">
+                    <h2 class="parallax-text" data-speed="0.2">Bridging aesthetic design<br>and functional code</h2>
+                </div>
+                <div class="overlay-text" id="text-3">
+                    <h2 class="parallax-text" data-speed="0.2">Crafting seamless<br>digital experiences</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- TICKER -->
+        <div class="ticker-section" aria-hidden="true">
+            <div class="ticker-track">
+                <div class="ticker-content">
+                    <span>HTML5</span><span class="ticker-dot">•</span><span>CSS3</span><span
+                        class="ticker-dot">•</span><span>JavaScript</span><span class="ticker-dot">•</span><span>UI/UX
+                        Design</span><span class="ticker-dot">•</span><span>Responsive Design</span><span
+                        class="ticker-dot">•</span><span>GitHub</span><span
+                        class="ticker-dot">•</span><span>Figma</span><span class="ticker-dot">•</span><span>Tailwind
+                        CSS</span><span class="ticker-dot">•</span><span>Java</span><span
+                        class="ticker-dot">•</span><span>VS Code</span><span class="ticker-dot">•</span><span>Chrome
+                        DevTools</span><span class="ticker-dot">•</span><span>Canva</span><span
+                        class="ticker-dot">•</span>
+                </div>
+                <div class="ticker-content" aria-hidden="true">
+                    <span>HTML5</span><span class="ticker-dot">•</span><span>CSS3</span><span
+                        class="ticker-dot">•</span><span>JavaScript</span><span class="ticker-dot">•</span><span>UI/UX
+                        Design</span><span class="ticker-dot">•</span><span>Responsive Design</span><span
+                        class="ticker-dot">•</span><span>GitHub</span><span
+                        class="ticker-dot">•</span><span>Figma</span><span class="ticker-dot">•</span><span>Tailwind
+                        CSS</span><span class="ticker-dot">•</span><span>Java</span><span
+                        class="ticker-dot">•</span><span>VS Code</span><span class="ticker-dot">•</span><span>Chrome
+                        DevTools</span><span class="ticker-dot">•</span><span>Canva</span><span
+                        class="ticker-dot">•</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- SUMMARY -->
+        <section class="section bg-[#121212] py-20" id="summary">
+            <div class="container mx-auto px-6">
+                <div class="about-header-wrap mb-10">
+                    <span class="about-badge">01 // ABOUT ME</span>
+                    <h2 class="section-title text-white font-bold spotlight-heading">Who is Chandresh Sharma ?</h2>
+                </div>
+
+                <div class="about-card-container reveal-section">
+                    <div class="card-shine"></div>
+                    <div class="about-content">
+                        <p>I’m <strong>Chandresh Sharma</strong> — a BCA student, frontend developer, and someone who
+                            genuinely enjoys building clean and interactive digital experiences. I like turning simple
+                            ideas into modern websites that not only look good but also feel smooth and easy to use.</p>
+                        <p>Most of my work revolves around HTML, CSS, JavaScript, Tailwind CSS, and UI/UX design. From
+                            creating the <em>DemuRup Media</em> website to building <em>Pocket Bhajan Diary</em>, I
+                            enjoy working on projects where design and functionality come together naturally.</p>
+                        <p>I’m constantly learning, experimenting with new ideas, improving my frontend skills, and
+                            exploring ways to create better user experiences through modern web design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+            <div class="container reveal-section">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="skills-showcase">
+                    <!-- LEFT SIDE: Terminal -->
+                    <div class="terminal-wrapper stagger-child">
+                        <div class="terminal-card tilt-card">
+                            <div class="card-shine"></div>
+                            <div class="terminal-header">
+                                <div class="mac-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <div class="terminal-title">chandresh@portfolio: ~</div>
+                            </div>
+                            <div class="terminal-body">
+                                <!-- Typewriter text will be injected here by JS -->
+                                <div class="terminal-cursor"></div>
+                            </div>
+                        </div>
+                        <a href="Chandresh_s_resume.pdf" target="_blank" class="glow-button mt-4 stagger-child">
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+
+                    <!-- RIGHT SIDE: Skills Marquee -->
+                    <div class="skills-marquee-container stagger-child">
+
+                        <!-- ROW 1: Skills (Left to Right) -->
+                        <div class="marquee-row">
+                            <h3 class="marquee-title">Skills</h3>
+                            <div class="marquee-track track-ltr">
+                                <!-- Group 1 -->
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-html5 skill-icon"></i><span>HTML5</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-css3-alt skill-icon"></i><span>CSS3</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-js skill-icon"></i><span>JavaScript</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fa-brands fa-css3 skill-icon"></i><span>Tailwind CSS</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-java skill-icon"></i><span>Java</span>
+                                </div>
+                                <!-- Group 2 (Duplicate) -->
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-html5 skill-icon"></i><span>HTML5</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-css3-alt skill-icon"></i><span>CSS3</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-js skill-icon"></i><span>JavaScript</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fa-brands fa-css3 skill-icon"></i><span>Tailwind CSS</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-java skill-icon"></i><span>Java</span>
+                                </div>
+                                <!-- Group 3 (Duplicate) -->
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-html5 skill-icon"></i><span>HTML5</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-css3-alt skill-icon"></i><span>CSS3</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-js skill-icon"></i><span>JavaScript</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fa-brands fa-css3 skill-icon"></i><span>Tailwind CSS</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-java skill-icon"></i><span>Java</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 2: Tools (Right to Left) -->
+                        <div class="marquee-row">
+                            <h3 class="marquee-title">Tools</h3>
+                            <div class="marquee-track track-rtl">
+                                <!-- Group 1 -->
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-github skill-icon"></i><span>GitHub</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-figma skill-icon"></i><span>Figma</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i class="fas fa-code skill-icon"></i><span>VS
+                                        Code</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i class="fab fa-chrome skill-icon"></i><span>Chrome
+                                        DevTools</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-paint-brush skill-icon"></i><span>Canva</span>
+                                </div>
+                                <div class="skill-pill tilt-card">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-square-root-variable skill-icon"></i><span>LaTeX</span>
+                                </div>
+                                <!-- Group 2 (Duplicate) -->
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-github skill-icon"></i><span>GitHub</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-figma skill-icon"></i><span>Figma</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i class="fas fa-code skill-icon"></i><span>VS
+                                        Code</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i class="fab fa-chrome skill-icon"></i><span>Chrome
+                                        DevTools</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-paint-brush skill-icon"></i><span>Canva</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-square-root-variable skill-icon"></i><span>LaTeX</span>
+                                </div>
+                                <!-- Group 3 (Duplicate) -->
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-github skill-icon"></i><span>GitHub</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fab fa-figma skill-icon"></i><span>Figma</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i class="fas fa-code skill-icon"></i><span>VS
+                                        Code</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i class="fab fa-chrome skill-icon"></i><span>Chrome
+                                        DevTools</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-paint-brush skill-icon"></i><span>Canva</span>
+                                </div>
+                                <div class="skill-pill tilt-card" aria-hidden="true">
+                                    <div class="card-shine"></div><i
+                                        class="fas fa-square-root-variable skill-icon"></i><span>LaTeX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section projects-section" id="projects">
+            <!-- Background Depth Elements -->
+            <div class="projects-bg-orb orb-1"></div>
+            <div class="projects-bg-orb orb-2"></div>
+            <div class="projects-bg-grid"></div>
+            <div class="particles-container">
+                <div class="particle p-1"></div>
+                <div class="particle p-2"></div>
+                <div class="particle p-3"></div>
+                <div class="particle p-4"></div>
+                <div class="particle p-5"></div>
+            </div>
+
+            <div class="container reveal-section">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="projects-slider-container">
+                    <div class="projects-slider-track">
+
+                        <!-- PROJECT 1 -->
+                       <div class="project-wrapper stagger-child float-3d-1">
+                            <div class="project-card">
+                                <div class="mock-browser">
+                                    <div class="mock-dots"><span></span><span></span><span></span></div>
+                                    <div class="mock-url-bar"></div>
+                                </div>
+
+                                <div class="project-preview-compact">
+                                    <img src="assets/logos/demurup-logo.png" class="project-logo" alt="DemuRup Media Logo">
+                                </div>
+
+                                <div class="project-header-always">
+                                    <h3>DemuRup Media Official Website</h3>
+                                </div>
+
+                                <div class="project-tags-always">
+                                    <div class="tech-chips">
+                                        <span class="chip">GSAP / Motion</span>
+                                        <span class="chip">Tailwind CSS</span>
+                                        <span class="chip">Web Audio API</span>
+                                        <span class="chip">Serverless UI</span>
+                                    </div>
+                                </div>
+
+                                <div class="project-details-overlay">
+                                    <div>
+                                        <p class="project-role">Frontend & Motion Developer — Agency Platform</p>
+                                        
+                                        <ul class="project-bullets">
+                                            <li>Engineered a physics-based lerp cursor engine and GSAP scroll-reveal animation pipeline.</li>
+                                            <li>Architected a lead modal with Web Audio API sound synthesis and SVG countdown tracking.</li>
+                                            <li>Developed a serverless asynchronous form bridge routing leads directly to Google Forms.</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <a href="#" class="project-link">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right arrow-icon"></i>
+                                    </a>
+                                </div> </div> </div> 
+                        <!-- PROJECT 2 -->
+                        <div class="project-wrapper stagger-child float-3d-1">
+                            <div class="project-card">
+                                <!-- Top mock bar -->
+                                <div class="mock-browser">
+                                    <div class="mock-dots"><span></span><span></span><span></span></div>
+                                    <div class="mock-url-bar"></div>
+                                </div>
+
+                                <!-- Icon and preview placeholder -->
+                                <div class="project-preview-compact">
+                                    <img src="assets/logos/gayatri-logo.png" class="project-logo" alt="Gayatri Industrial Engineers Logo">
+                                </div>
+                                <!-- Content Always Visible -->
+                                <div class="project-header-always">
+                                    <h3>Gayatri Industrial Engineers Official Website</h3>
+                                </div>
+
+                                <div class="project-tags-always">
+                                    <div class="tech-chips">
+                                        <span class="chip">HTML5</span>
+                                        <span class="chip">CSS3</span>
+                                        <span class="chip">JavaScript</span>
+                                        <span class="chip">Serverless UI</span>
+                                    </div>
+                                </div>
+
+                                <!-- Hover Reveal Details -->
+                               <div class="project-details-overlay">
+                                    <div>
+                                        <p class="project-role">Frontend & UI/UX Developer — Multi-Page Platform</p>
+                                        <ul class="project-bullets">
+                                            <li>Engineered GPU parallax layers, dynamic timelines, and drag-to-scroll carousels in vanilla JS.</li>
+                                            <li>Architected a serverless lead funnel using a hidden iframe for reload-free validation.</li>
+                                            <li>Implemented client-side blueprint copy protection and smart window tab re-engagement.</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="project-link">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right arrow-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT 3 -->
+                        <div class="project-wrapper stagger-child float-3d-2">
+                            <div class="project-card">
+                                <!-- Top mock bar -->
+                                <div class="mock-browser">
+                                    <div class="mock-dots"><span></span><span></span><span></span></div>
+                                    <div class="mock-url-bar"></div>
+                                </div>
+
+                                <!-- Icon and preview placeholder -->
+                                <div class="project-preview-compact">
+                                    <img src="assets/logos/pocket-bhajan-logo.png" class="project-logo" alt="Pocket Bhajan Diary Logo">
+                                </div>
+
+                                <!-- Content Always Visible -->
+                                <div class="project-header-always">
+                                    <h3>Pocket Bhajan Diary</h3>
+                                </div>
+
+                                <div class="project-tags-always">
+                                    <div class="tech-chips">
+                                        <span class="chip">Android Java</span>
+                                        <span class="chip">SQLite Database</span>
+                                        <span class="chip">Async Storage</span>
+                                        <span class="chip">Media API</span>
+                                    </div>
+                                </div>
+
+                                <!-- Hover Reveal Details -->
+                                <div class="project-details-overlay">
+                                    <div>
+                                        <p class="project-role">Mobile Application Developer — Native Android App</p>
+                                        
+                                        <ul class="project-bullets">
+                                            <li>Developed a native Android application in Java with multi-threaded async media downloading.</li>
+                                            <li>Architected an offline local data cache layer utilizing structured SQLite database wrappers.</li>
+                                            <li>Implemented background audio playback management and runtime dynamic UI text scaling.</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="project-link">
+                                        <span>View Project</span>
+                                        <i class="fas fa-arrow-right arrow-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNEY (Bento Grid) -->
+        <section class="section bento-section" id="journey">
+            <div class="bento-bg">
+                <div class="blob-blue"></div>
+                <div class="blob-gold"></div>
+                <div class="bento-noise"></div>
+                <div class="bento-particles">
+                    <div class="bento-particle" style="top: 10%; left: 20%; animation-delay: 0s;"></div>
+                    <div class="bento-particle" style="top: 30%; left: 80%; animation-delay: 2s;"></div>
+                    <div class="bento-particle" style="top: 70%; left: 10%; animation-delay: 1s;"></div>
+                    <div class="bento-particle" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
+                </div>
+            </div>
+
+            <div class="container reveal-section">
+                <h2 class="section-title">My Journey</h2>
+
+                <div class="bento-grid">
+                    <!-- Experience (Hero Card) -->
+                    <div class="bento-card bento-hero glass-card tilt-card stagger-child float-bento-1">
+                        <div class="card-shine"></div>
+                        <div class="bento-status"><span class="status-dot"></span> Currently Building</div>
+
+                        <div class="bento-content">
+                            <h3 class="bento-title">Experience</h3>
+
+                            <div class="exp-item">
+                                <h4>Qaani Enterprises</h4>
+                                <span class="exp-role">Web & Digital Operations Intern</span>
+                                <span class="exp-date">Dec 2024 – May 2025</span>
+                            </div>
+
+                            <div class="exp-item">
+                                <h4>DemuRup Media</h4>
+                                <span class="exp-role">Junior Web Design Intern</span>
+                                <span class="exp-date">Jul 2025 – Dec 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certifications (Compact stacked) -->
+                    <div class="bento-card bento-certs glass-card tilt-card stagger-child float-bento-2"
+                        id="certifications">
+                        <div class="card-shine"></div>
+                        <h3 class="bento-title-small">Certifications</h3>
+
+                        <div class="bento-certs-stack">
+                            <div class="cert-chip-bento">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <span class="cert-name">Google UX Design</span>
+                                    <span class="cert-date-small">Feb 2026</span>
+                                </div>
+                            </div>
+                            <div class="cert-chip-bento">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <span class="cert-name">Web Design & Dev</span>
+                                    <span class="cert-date-small">Jan 2026</span>
+                                </div>
+                            </div>
+                            <div class="cert-chip-bento">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <span class="cert-name">GNSS — IIRS ISRO</span>
+                                    <span class="cert-date-small">Oct 2025</span>
+                                </div>
+                            </div>
+                            <div class="cert-chip-bento">
+                                <i class="fas fa-award"></i>
+                                <div>
+                                    <span class="cert-name">Basics of AI</span>
+                                    <span class="cert-date-small">Sep 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education (Wide Card) -->
+                    <div class="bento-card bento-wide glass-card tilt-card stagger-child float-bento-3">
+                        <div class="card-shine"></div>
+                        <div class="bento-content bento-edu-flex">
+                            <div>
+                                <h3 class="bento-title">Education</h3>
+                                <div class="edu-item">
+                                    <h4>Amity University Online</h4>
+                                    <span class="edu-role">Bachelor of Computer Applications</span>
+                                </div>
+                            </div>
+                            <div class="edu-date-wrap">
+                                <span class="edu-date">Jul 2024 – Jul 2027</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PREMIUM RESPONSIVE FOOTER -->
+        <footer class="footer-premium" id="contact">
+            <!-- Ambient lighting container inside footer -->
+            <div class="footer-ambient-lighting"></div>
+
+            <div class="container reveal-section">
+                <!-- SECTION 1 — Large Cinematic Statement -->
+                <div class="footer-statement-section stagger-child">
+                    <h2 class="cinematic-headline">
+                        <span>LET’S BUILD SOMETHING</span><br>
+                        <span class="text-white">AMAZING</span> <span class="text-amber">TOGETHER.</span>
+                    </h2>
+                    <p class="cinematic-subtext">
+                        I’m always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        vision.
+                    </p>
+                </div>
+
+                <!-- SECTION 2 — The Interactive Email Pill -->
+                <div class="footer-pill-section stagger-child">
+                    <button class="cinematic-email-pill magnetic-link" id="copyEmailBtn"
+                        data-email="cs7917217@gmail.com" aria-label="Copy Email Address">
+                        <span class="pill-left">
+                            <i class="fas fa-envelope text-amber"></i>
+                            <span class="email-address">cs7917217@gmail.com</span>
+                        </span>
+                        <span class="pill-right">
+                            <i class="fas fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </button>
+                </div>
+
+                <!-- SECTION 3 — The Information Grid -->
+                <div class="footer-info-grid stagger-child">
+                    <!-- Column 1 (Identity) -->
+                    <div class="info-col col-identity">
+                        <div class="footer-logo-wrap">
+                            <div class="cs-logo-circle">CS</div>
+                        </div>
+                        <h3 class="footer-name">Chandresh Sharma</h3>
+                        <p class="footer-title">FRONTEND UI/UX DEVELOPER</p>
+                        <p class="footer-desc">Building clean, responsive, and immersive digital experiences...</p>
+                    </div>
+
+                    <!-- Column 2 (Explore) -->
+                    <div class="info-col col-explore">
+                        <h4 class="col-heading">Explore</h4>
+                        <ul class="explore-links">
+                            <li><a href="#home"><span class="dot-bullet"></span>Home</a></li>
+                            <li><a href="#skills"><span class="dot-bullet"></span>Skills</a></li>
+                            <li><a href="#projects"><span class="dot-bullet"></span>Projects</a></li>
+                            <li><a href="#journey"><span class="dot-bullet"></span>Journey</a></li>
+                            <li><a href="#contact"><span class="dot-bullet"></span>Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 (Connect) -->
+                    <div class="info-col col-connect">
+                        <h4 class="col-heading">Connect</h4>
+                        <p class="connect-detail"><a href="mailto:cs7917217@gmail.com"
+                                class="link-hover">cs7917217@gmail.com</a></p>
+                        <p class="connect-detail text-muted">Mumbai, India</p>
+                        <div class="social-backlit-row">
+                            <a href="https://github.com/Chandresh-Sharma-1007" target="_blank" rel="noopener noreferrer"
+                                class="social-circle magnetic-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/chandresh-sharma" target="_blank" rel="noopener noreferrer"
+                                class="social-circle magnetic-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="mailto:cs7917217@gmail.com" class="social-circle magnetic-link" aria-label="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION 4 — Bottom Signature -->
+                <div class="footer-signature stagger-child">
+                    <p class="copyright-line">&copy; 2026 Chandresh Sharma. All rights reserved.</p>
+                    <a href="#privacy" class="privacy-link"><span>Privacy Policy</span></a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- PREMIUM WHATSAPP BUTTON -->
+        <a href="https://wa.me/919737442226" target="_blank" class="whatsapp-float magnetic-link"
+            aria-label="Chat on WhatsApp">
+            <div class="whatsapp-pulse"></div>
+            <div class="whatsapp-icon-bg">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <span class="whatsapp-tooltip">Chat with me</span>
+        </a>
+
+        <!-- Sleek Minimal Toast Notification -->
+        <div id="emailToast" class="premium-toast">Email Copied!</div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
